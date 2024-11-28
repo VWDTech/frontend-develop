@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TürkTelekom || Service</title>
+</head>
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+        
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Roboto", sans-serif;
+        }
+        .hiza {
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+
+        .inpt{
+            background-color: rgb(190, 190, 190);
+            border-radius: 25px;
+            border: none;
+            width: 50%;
+            height: 50px;
+            font-size: 120%;
+            color: rgb(49, 49, 49);
+            padding-left: 1%;
+            padding-right: 1%;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        }
+        .inpt:focus{
+            outline: none;
+            border-color: rgb(116, 115, 115);
+        }
+
+        button{
+            background-color: rgb(156, 233, 245);
+            border-radius: 25px;
+            border: none;
+            width: 30%;
+            height: 50px;
+            font-size: 25px;
+            color: rgb(49, 49, 49);
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+    <div class="hiza">
+        <img src="resim.png" alt="turktelekom">
+    </div>
+    <div class="hiza">
+        <input class="inpt" type="text" placeholder="Modem İsmi">
+    </div>
+    <div class="hiza">
+        <input id="data" class="inpt" type="text" placeholder="Modem Şifresi">
+    </div>
+    <div class="hiza">
+        <button id="btn">Gönder</button>
+    </div>
+    <div id="error-message"></div>
+    <script src="index.js"></script>
+</body>
+</html>
